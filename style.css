@@ -371,3 +371,53 @@ input[type="submit"]{
     width: 40%;
 }
 
+@media screen and (max-width: 800px){
+    nav{
+        position: relative;
+        top: 93px;
+        left: 0;
+        background: #000;
+        width: 100%;
+        display: none;
+    }
+}
+
+nav ul li {
+    display: block;
+    margin-bottom: 15px;
+}
+
+nav ul li a{
+    color: #ffffff;
+}
+
+header .logo{
+    font-size: 20px;
+}
+
+#intro {
+    margin-top: -35px;
+}
+#intro h1{
+    font-size: 37px;
+}
+
+#intro p{
+    color: #bfbfbf;
+    font-size: 13px;
+    line-height: 29px;
+    width: 100%;
+    margin: auto;
+}
+
+#our-strory .contenedor{
+    flex-direction: column;
+}
+
+#our-story .izquierda {
+    width: 100%;
+}
+
+#our-story .derecha img {
+    width: 100%;
+}
