@@ -4,6 +4,10 @@ body{
     font-family: 'Poppins';
 }
 
+.menu-icon {
+    display: none;
+}
+
 a{
     text-decoration: none;
 }
@@ -21,7 +25,7 @@ a{
 
 .menu .contenedor{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -67,7 +71,7 @@ nav ul li a{
 }
 
 #intro .menu{
-    text-decoration: none;
+    /* text-decoration: none; */
     color: #ffffff;
     border: 1px solid #ffffff;
     padding: 9px;
@@ -75,7 +79,7 @@ nav ul li a{
 }
 
 #intro .reservation{
-    text-decoration: none;
+    /* text-decoration: none; */
     padding: 9px;
     background: #c39d63;
     color: #ffffff;
@@ -90,9 +94,9 @@ nav ul li a{
     padding: 9px 23px;
 }
 
-/* OUR STIORY */
+/* OUR STORY */
 #our-story{
-    padding: 90px;
+    padding: 90px 0;
 }
 
 #our-story .contenedor{
@@ -214,7 +218,7 @@ hr{
     height: 270px;
 }
 
-/* TESTIMONIALs */
+/* TESTIMONIALS */
 #testimonials{
     text-align: center;
     background: #f7f7f7;
@@ -323,7 +327,7 @@ ul#tercero{
 }
 
 #contacto .derecha a{
-    padding: 9px 2px;
+    padding: 9px 12px;
 }
 
 #contacto h3.news{
@@ -373,51 +377,118 @@ input[type="submit"]{
 
 @media screen and (max-width: 800px){
     nav{
-        position: relative;
+        position: absolute;
         top: 93px;
         left: 0;
         background: #000;
         width: 100%;
         display: none;
     }
-}
 
-nav ul li {
-    display: block;
-    margin-bottom: 15px;
-}
+    nav ul li {
+        display: block;
+        margin-bottom: 15px;
+    }
 
-nav ul li a{
-    color: #ffffff;
-}
+    nav ul li a{
+        color: #ffffff;
+    }
 
-header .logo{
-    font-size: 20px;
-}
+    .menu-icon {
+        display: block;
+    }
 
-#intro {
-    margin-top: -35px;
-}
-#intro h1{
-    font-size: 37px;
-}
+    header .logo{
+        font-size: 20px;
+    }
 
-#intro p{
-    color: #bfbfbf;
-    font-size: 13px;
-    line-height: 29px;
+    #intro {
+        margin-top: -35px;
+    }
+
+    #intro h1{
+        font-size: 37px;
+    }
+
+    #intro p{
+        color: #bfbfbf;
+        font-size: 13px;
+        line-height: 29px;
+        width: 100%;
+        margin: auto;
+    }
+
+    #our-story .contenedor{
+        flex-direction: column;
+    }
+
+    #our-story .izquierda {
+        width: 100%;
+    }
+
+    #our-story .derecha img {
+        width: 100%;
+    }
+
+    #menu .linea1 div, #menu .linea2 div {
+        display: block;
+        width: 100%;
+    }
+
+    #menu #texto-2 {
+        position: relative;
+        top: 18px;
+    }
+
+    .linea2 .hongos {
+        width: 100% !important;
+        top: 30px !important;
+        left: 0px !important;
+    }
+    
+    #menu {
+        background: #1F1F1F;
+        height: 1625px;
+    }
+    
+    #menu #ultimo {
+        width: 100% !important;
+        top: 52px;
+    }
+    
+    .linea2 .pez {
+        width: 100% !important;
+        top: 25px !important;
+        left: 0px !important;
+    }
+    
+    #menu .linea2 {
+        height: 623px;
+    }
+
+    .contenedor-testimonials {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .testimonial {
     width: 100%;
-    margin: auto;
-}
+    }
 
-#our-strory .contenedor{
-    flex-direction: column;
-}
+    #contacto .contenedor {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
 
-#our-story .izquierda {
-    width: 100%;
-}
+    #contacto .izquierda, #contacto .derecha {
+        width: 81%;
+    }
 
-#our-story .derecha img {
-    width: 100%;
+    .derecha {
+        width: 98% !important;
+        margin-top: 57px;
+    }
 }
